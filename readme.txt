@@ -18,6 +18,7 @@ git checkout HEAD readme.txt		版本库中的readme.txt文件同时覆盖掉暂�
 ssh-keygen -t rsa -C "youremail@example.com"					创建SSH Key(C盘User文件夹的用户主目录下生成.ssh文件夹)
 git remote add origin git@github.com:tinmen091008/TestGitOrigin.git		
 本地仓库TestGitOrin和GitHub上的仓库TestGitOrin建立联系(本地仓库名和远程仓库名要相同)
+
 git push -u origin master							第一次把本地仓库的内容推送到远程仓库
 git push origin master								第二次及以后推送
 git clone git@github.com:tinmen091008/TestGitOrigin.git				克隆远程仓库TestGitOrigin到本地当前目录
