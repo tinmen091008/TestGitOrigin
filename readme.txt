@@ -13,4 +13,4 @@ git reset --hard 852bf			跳到版本号未852bf开头的版本(可前可后)
 git reflog						查看Git的每一次版本库的变更(可查版本号)
 git checkout -- readme.txt		暂存区中的readme.txt文件覆盖掉工作区中的readme.txt文件
 git reset HEAD readme.txt		版本库中的readme.txt文件覆盖掉暂存区中的readme.txt文件
-git checkout HEAD readme.txt	版本库中的readme.txt文件覆盖掉
+git checkout HEAD readme.txt	版本库中的readme.txt文件同时覆盖掉暂存区和工作区的readme.txt文件
