@@ -14,3 +14,17 @@ git reflog						查看Git的每一次版本库的变更(可查版本号)
 git checkout -- readme.txt		暂存区中的readme.txt文件覆盖掉工作区中的readme.txt文件
 git reset HEAD readme.txt		版本库中的readme.txt文件覆盖掉暂存区中的readme.txt文件
 git checkout HEAD readme.txt	版本库中的readme.txt文件覆盖掉
+
+
+ssh-keygen -t rsa -C "youremail@example.com" 	创建SSH Key(C盘User文件夹的用户主目录下生成.ssh文件夹)
+git remote add origin git@github.com:tinmen091008/TestGitOrigin.git		本地仓库TestGitOrin和GitHub上的仓库TestGitOrin建立联系(本地仓库名和远程仓库名要相同)
+git push -u origin master		第一次把本地仓库的内容推送到远程仓库
+git push origin master			第二次及以后推送
+git clone git@github.com:tinmen091008/TestGitOrigin.git		克隆远程仓库TestGitOrigin到本地当前目录
+git pull origin master			把远程仓库的内容拉取到本地仓库
+
+git checkout -b dev				创建并切换到dev分支(git branch dev和git checkout dev)
+git branch						查看当前分支
+git checkout master				切换到master分支
+git merge dev					把dev分支的内容合并到当前分支(master分支)
+git branch -d dev				删除dev分支
